@@ -32,6 +32,20 @@ I looked at CMake and became convinced that the features it offers solve many pr
 
 This is currently a Windows centric project.  My plan is to eventually get this project working on Windows, Mac, Linux and Raspberry PI.
 
+- Add examples of using other C++ libraries
+    - [Faust](https://faust.grame.fr/)
+    - [Steinberg asiosdk](https://www.steinberg.net/asiosdk)
+    - [Boost](https://www.boost.org/)
+    - [Eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page)
+    - [Maximilian](https://github.com/micknoise/Maximilian)
+    - [KFR](https://www.kfrlib.com/)
+    - [eDSP](https://github.com/mohabouje/eDSP)
+- Add examples of using 3rd Party Juce Modules
+    - [Tracktion Engine](https://github.com/Tracktion/tracktion_engine)
+    - [Organic UI](https://github.com/benkuper/juce_organicui)
+    - [Organic UI/Timeline](https://github.com/benkuper/juce_timeline)
+    - so many others...
+
 ## On Windows
 
 1. I installed [Microsoft Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/vs/community/)
