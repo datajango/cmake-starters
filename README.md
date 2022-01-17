@@ -33,6 +33,8 @@ I looked at CMake and became convinced that the features it offers solve many pr
 This is currently a Windows centric project.  My plan is to eventually get this project working on Windows, Mac, Linux and Raspberry PI.
 
 - Add examples of using other C++ libraries
+    - [SDL](https://www.libsdl.org/)
+    - [SFML](https://www.sfml-dev.org/)
     - [Faust](https://faust.grame.fr/)
     - [Steinberg asiosdk](https://www.steinberg.net/asiosdk)
     - [Boost](https://www.boost.org/)
@@ -40,6 +42,7 @@ This is currently a Windows centric project.  My plan is to eventually get this 
     - [Maximilian](https://github.com/micknoise/Maximilian)
     - [KFR](https://www.kfrlib.com/)
     - [eDSP](https://github.com/mohabouje/eDSP)
+    - [More Awesome Music DSP*](https://github.com/olilarkin/awesome-musicdsp)
 - Add examples of using 3rd Party Juce Modules
     - [Tracktion Engine](https://github.com/Tracktion/tracktion_engine)
     - [Organic UI](https://github.com/benkuper/juce_organicui)
@@ -145,9 +148,27 @@ This is currently a Windows centric project.  My plan is to eventually get this 
 ## Project 3 Juce UI Application
 
 1. This is a basic Juce Hello example project.
+    - I started with the Projucer
+        - I needed to add juce_generate_juce_header(JuceHello)
     - Juce is downloaded and configured
     - Juce CMake extensions take over and do the heavy lifting
     - Juce Framework is now installed for other applications in this series to use.
 1. On Windows: \build\03_JuceHello\JuceHello_artefacts\Debug\JuceHello.exe
 ![03_JuceHello Screen Capture](03_JuceHello.png)
 
+## Project 4 Juce Plugin VST
+
+1. This is a basic Juce Audio Plugin supporting AU, VST3 and Standalone
+1. I started with the Projucer
+1. Projucer Plugin Characteristics
+    - Plugin is a Synth
+    - Plugin MIDI Input
+    - Plugin MIDI Output
+    - MIDI Effect Plugin
+1. No support for VST 2.4.
+
+## Project 5 Juce UI No Jucer
+
+1. This is a basic Juce UI Aplication
+1. The Projucer was not used.
+1. On Windows: \build\05_JuceUINoJucer\JuceUINoJucer_artefacts\Debug\JuceUINoJucer.exe
